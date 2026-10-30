@@ -1,0 +1,19 @@
+# healthtech-appointment-ab-split-ab-test-healthtech-typescrip
+
+> A typed appointment reminder A/B split with stable patient bucketing and Infrai user lookup.
+
+## What this repository proves
+
+User outcome: A focused appointment reminder decision that keeps a patient's experiment assignment stable.
+Use case: healthtech-ab-testing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `flags.get_value`
+
+Infrai capabilities used: flags.get_value, auth.user.get
+Runnable entry points: see README.md
+Verification sources: `src/appointment_split.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

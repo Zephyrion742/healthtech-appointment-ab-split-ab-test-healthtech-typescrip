@@ -1,0 +1,17 @@
+{
+  "name": "healthtech-appointment-ab-split",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "node --experimental-strip-types src/run_demo.ts",
+    "test": "node --experimental-strip-types src/appointment_split.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
+}
